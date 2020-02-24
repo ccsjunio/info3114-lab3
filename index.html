@@ -1,12 +1,38 @@
-<!doctype html>
-<html lang="end-US">
-    <head>
-        <title>INFO3114 - LAB03</title>
-        <meta charset="utf8"/>
+<html>
+<head>
+    <title>Lab #3</title>
+    <script>
+        var fullName = "Garth Santor";
+        var obj = {
+            fullName: "Bill Pulling",
+            prop: {
+                fullName: "Jim Cooper",
+                getFullName: function () {
+                    return this.fullName;
+                }
+            }
+        };
 
-        <script src="./js/main.js"></script>
-    </head>
-    <body>
-        <h1>INFO3114 - LAB03</h1>
-    </body>
+        console.log(obj.prop.getFullName());
+        var test = obj.prop.getFullName;
+        console.log(test());
+
+        /* Your answer to question 2 below goes underneath the question
+        
+            1. Submit a screen shot of the Chrome debugger console showing the
+			   console.log output.
+
+            2. Explanation of how the output is generated; i.e.
+               How does the code work starting from line 16 and finishing with
+			   the completion of line 18?
+			   
+			   <Answer here>
+        
+        */
+
+    </script>
+</head>
+<body>
+
+</body>
 </html>
